@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Statut de Capybot</title>
+    
+    <!-- Lien vers le fichier CSS d'AOS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+    
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        /* Styles globaux */
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #2f2f30;
+            color: #ffffff;
+            font-family: Arial, sans-serif;
+            font-size: 18px;
+            overflow-x: hidden;
+        }
+
+        /* Conteneur principal */
+        .top-container {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            padding: 20px;
+            width: 100%;
+        }
+
+        /* Style pour l'image */
+        img {
+            width: 60%;
+            max-width: 300px;
+            height: auto;
+            cursor: pointer;
+        }
+
+        /* Conteneur pour les boutons */
+        .buttons-container {
+            display: flex;
+            gap: 0px; /* Espacement entre les boutons */
+            margin-left: 20px; /* Légère marge entre l'image et les boutons */
+        }
+
+        /* Style pour les boutons */
+        .btn {
+            background-color: #2f2f30;
+            border: none;
+            color: #01A89C;
+            padding: 16px 20px;
+            text-decoration: none;
+            font-size: 23px;
+            cursor: pointer;
+            border-radius: 50px;
+            text-shadow: 0 0 5px #464646, 0 0 10px #313131;
+            font-family: 'Poppins', sans-serif;
+            position: relative;
+            left: -100px;
+        }
+
+        /* Style pour le bouton "SUPPORT" */
+        .btn-support {
+            background-color: #000000;
+            border: 2px solid #ffffff;
+            color: white;
+            padding: 16px 38px;
+            text-decoration: none;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 50px;
+            position: fixed; /* Fixe le bouton en haut à droite */
+            top: 25px;
+            right: 20px;
+            text-shadow: 0 0 5px #464646, 0 0 10px #313131;
+            transition: background-color 0.3s, transform 0.2s; /* Transition pour le survol */
+        }
+
+        /* Effet de survol pour le bouton SUPPORT */
+        .btn-support:hover {
+            background-color: #202020;
+            transform: scale(1.05); /* Légère augmentation de la taille */
+            text-shadow: 0 0 10px #fff, 0 0 20px #c0bebe; /* Illumination du texte */
+        }
+
+        /* Pied de page */
+        footer {
+            margin-top: 40px;
+            font-size: 14px;
+            text-align: center;
+            width: 100%;
+        }
+
+        /* Conteneur du texte sous les boutons */
+        .text-container {
+            margin-top: 40px; /* Espacement entre les boutons et le texte */
+            width: 100%; /* Utiliser toute la largeur disponible */
+        }
+
+        /* Style pour le titre "Modération" centré dans son propre conteneur */
+        .mod-title {
+            font-size: 24px;
+            text-align: left; /* Centre le titre dans son propre conteneur */
+            margin-top: 700px;
+            color: #01A89C;
+            margin-bottom: 10px;
+            margin-left: 700px;
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+
+        /* Style pour la description alignée à gauche */
+        .mod-description {
+            text-align: left; /* Aligne la description à gauche */
+            font-size: 16px;
+            margin-top: 800px;
+            font-style: normal;
+            margin-left: 700px; /* Espace de marge à gauche pour aligner avec le reste du texte */
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <!-- Conteneur principal avec image et boutons alignés côte à côte -->
+    <div class="top-container">
+        <!-- Lien pour l'image -->
+        <a href="menu principal.html">
+            <img src="capybot noir.png" alt="Logo de Capybot">
+        </a>
+
+        <!-- Conteneur pour les boutons -->
+        <div class="buttons-container">
+            <!-- Bouton Statut -->
+            <a href="statut.html" class="btn">Statut</a>
+
+            <!-- Bouton Commandes -->
+            <a href="commandes.html" class="btn">Commandes</a>
+        </div>
+    </div>
+
+    <!-- Conteneur pour le texte sous les boutons -->
+    <div class="text-container" data-aos="fade-right">
+        <h2 class="mod-title" tabindex="0" itemprop="name">Modération</h2>
+        <p class="mod-description">
+            La modération avec Capybot à vos côtés
+            <br>
+            Avertissement, sourdine, exclusion ou même banissement, tous ces outils individuels dans un seul bot
+        </p>
+    </div>
+
+    <!-- Bouton SUPPORT fixé en haut à droite -->
+    <a href="https://discord.gg/seHPfhnHPf" class="btn-support" target="_blank">SUPPORT</a>
+
+    <!-- Pied de page -->
+    <footer>
+        &copy; 2025 Capybot. Tous droits réservés.
+    </footer>
+
+    <!-- Lien vers le fichier JS d'AOS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    
+    <!-- Initialisation de AOS -->
+    <script>
+        AOS.init();
+    </script>
+
+</body>
+</html>
